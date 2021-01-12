@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+
+    margin: 0;
+    
+}
+
+nav.topbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: darkgray;
+
+    a {
+        height: 3rem;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+
+
+section {
+    background-color: lightgray;
+    overflow: auto; //check
+    padding: 2em;  //check
+    border-bottom: 1px solid rgb(173, 173, 173);
+
+    > h2 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: normal;
+        margin: 0 0 1em 0;
+    }
+
+    > div {
+        max-width: 50em;
+        margin: 0 auto;   //CENTER
+    }
+
+
+
+    // WELCOME SECTION
+
+    &.welcome {
+        background-image: url('../img/welcome.jpg');
+        background-size: cover;
+        height: 20rem;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 4rem;
+        }
+    
+        h1 {
+            margin: 0;
+            font-size: 4rem;
+        }
+    
+        .tagline {
+            opacity: 0.7;
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
+
+    &.plot {
+
+        > div {
+            display: flex;
+        }
+
+        .poster {
+            height: 20em;
+            margin-right: 1rem;
+        }
+
+        .dramatic {
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+    
+    }
+
+    &.chars {
+        background-image: url('../img/rey-standing.jpg');
+        background-size: cover;
+        min-height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 50em;
+            font-size: 0.6rem;
+        }
+
+        img {
+            height: 8em;
+            border-radius: 50%;
+            margin: 0.5em;
+
+            &.biggest {
+                height: 12em;
+            }
+
+            &.bigger {
+                height: 10em;
+            }
+
+            &.big {
+                height: 9em;
+            }
+        }
+    }
+
+    &.ratings {
+
+        > div {
+            display: flex;
+            justify-content: space-evenly;
+
+            .rating {
+                height: 20rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                text-align: center;
+                
+
+                .score {
+                    font-size: 2em;
+                }
+
+                .bar {
+                    background-color: grey;
+                    font-size: 1.6rem;
+                }
+
+                .reviewer {
+                    font-size: 1.2em;
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+
+    &.cast {
+
+
+        > div {
+
+            display: flex;
+            flex-direction: column;
+
+            .main {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 3em;
+    
+                img {
+                    width: 10em;
+                    margin-right: 1em;
+                }
+
+                .name {
+                    
+                    p {
+                        line-height: 1.2em;
+                    }
+                }
+            }
+
+            .rollcall {
+                display: flex;
+                justify-content: space-between;
+
+                .person {
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        height: 100%;
+                        width: 7em;
+                    }
+
+                    .name {
+                        position: relative;
+                        bottom: 2rem;
+                        z-index: 5;
+                        width: 100%;
+                        padding: 0.25em 0;
+                        background: rgba(0,0,0,0.5);
+                        color: white;
+                        text-align: center;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    &.gallery {
+
+        padding-left: 0;
+        padding-right: 0;
+    
+        > div {
+
+            width: 100vw;
+            max-width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30em;
+
+            background: transparent url('/img/gallery.jpg') center center/cover no-repeat scroll;    
+            padding: 0 1em;
+
+            .dir {
+                color: white;
+                font-size: 5em;
+            }
+            
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
